@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
+﻿using Xunit;
 
-namespace xUnit.Tests
+namespace xUnit.Tests.Facts
 {
-    public class xUnitTest
+    public class xUnitFacts
     {
         [Theory]
         [InlineData(3)]

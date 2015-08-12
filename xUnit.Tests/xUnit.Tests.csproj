@@ -54,8 +54,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Facts\xUnitFacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="xUnitTest.cs" />
+    <Compile Include="Theories\xUnitTheories.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
