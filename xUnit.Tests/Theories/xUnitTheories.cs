@@ -13,7 +13,7 @@ namespace xUnit.Tests.Facts
             Assert.True(IsOdd(value));
         }
 
-        bool IsOdd(int value)
+        private static bool IsOdd(int value)
         {
             return value % 2 == 1;
         }
