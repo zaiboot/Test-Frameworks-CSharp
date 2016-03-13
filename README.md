@@ -5,3 +5,6 @@ I have some legacy code I work on, and with the upcoming of .net core and also w
 for some alternatives to MSTest. 
 
 As a starting point I am following the docs from xunit ( https://xunit.github.io/docs/getting-started-desktop as a starter)
+
+Some interesting issues to track:
+* https://github.com/xunit/xunit/issues/291
