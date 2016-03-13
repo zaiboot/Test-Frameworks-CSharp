@@ -6,5 +6,10 @@ for some alternatives to MSTest.
 
 As a starting point I am following the docs from xunit ( https://xunit.github.io/docs/getting-started-desktop as a starter)
 
+Configuration files:
+
+* https://xunit.github.io/docs/configuring-with-xml.html
+* https://xunit.github.io/docs/configuring-with-json.html
+
 Some interesting issues to track:
 * https://github.com/xunit/xunit/issues/291
