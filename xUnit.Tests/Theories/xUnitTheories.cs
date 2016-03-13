@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace xUnit.Tests.Facts
+namespace xUnit.Tests.Theories
 {
     public class xUnitTheories
     {
