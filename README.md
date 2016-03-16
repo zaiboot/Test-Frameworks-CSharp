@@ -13,3 +13,18 @@ Configuration files:
 
 Some interesting issues to track:
 * https://github.com/xunit/xunit/issues/291
+
+For mono.net compatibily, it is being used:
+* xbuild 4.2
+* monodevelop 5.10
+
+Currently on
+zaiboot@DebianMono:~/$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Debian
+Description:    Debian GNU/Linux 8.3 (jessie)
+Release:        8.3
+Codename:       jessie
+
+
+
