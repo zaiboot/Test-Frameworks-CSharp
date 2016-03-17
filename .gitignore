@@ -5,6 +5,7 @@
 *.suo
 *.user
 *.sln.docstates
+*.userprefs #mono user preferences
 
 # Build results
 [Dd]ebug/
