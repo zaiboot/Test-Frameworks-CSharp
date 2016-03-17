@@ -20,11 +20,7 @@ For mono.net compatibily, it is being used:
 
 Currently on
 zaiboot@DebianMono:~/$ lsb_release -a
-No LSB modules are available.
-Distributor ID: Debian
 Description:    Debian GNU/Linux 8.3 (jessie)
-Release:        8.3
-Codename:       jessie
 
 
 
