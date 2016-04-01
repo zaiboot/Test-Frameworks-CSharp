@@ -15,6 +15,52 @@ Some interesting issues to track:
 
 * https://github.com/xunit/xunit/issues/291
 
+##Azure Setup
+I got some azure credits from a conference about azure, some time ago and wanted to give it a try. The main goal for this set up was to test out the azure features and try to make it work without monode develop. Text-mode only.
+
+
+Currently on
+
+```sh
+zaiboot@MonoDebian:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Debian
+Description:    Debian GNU/Linux 8.3 (jessie)
+Release:        8.3
+Codename:       jessie
+
+```
+
+
+
+
+Follow the instructions from here:
+http://www.mono-project.com/docs/getting-started/install/linux/
+
+and if get and error, according to this post https://stackoverflow.com/questions/29982959/how-to-install-mono-4-0-1-on-debian-8:
+
+
+```sh
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
+sudo apt-get update
+
+echo "deb http://download.mono-project.com/repo/debian wheezy-apache24-compat main" | sudo tee -a /etc/apt/sources.list.d/mono-xamarin.list
+
+echo "deb http://download.mono-proje)ct.com/repo/debian wheezy-libjpeg62-compat main" | sudo tee -a /etc/apt/sources.list.d/mono-xamarin.list
+
+sudo apt-get update
+
+sudo apt-get install mono-complete
+```
+basically it seems that mono-complete should require libjpeg8 and is not doing it.
+
+Nuget on linux: https://packages.debian.org/jessie/nuget
+```sh
+sudo apt-get install nuget
+```
+and all should be good.
+
 
 ##Linux Setup
 
@@ -53,8 +99,7 @@ I had to install xbuild as an extra step in Debian. It didn't worked correctly w
 
 * Creating sln and .csproj
 
-I created an MSTest inside VS 2015 and Xamarin/Monodevelop barked. I had to create the sln completely from scratch in Xamarin Studio (windows) and now all IDE's work fine.
-
+I created an MSTest inside VS 2015 Community and Xamarin/Monodevelop barked. I had to create the sln completely from scratch in Xamarin Studio (windows) and now all IDE's work fine. Looks like it is because of the version of .net framework should be 4.0 instead of 4.5.1
 
 
 
